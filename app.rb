@@ -23,7 +23,7 @@ class App < Sinatra::Base
 
     @product_id_1 = params[:num1]
     @product_id_2 = params[:num2]
-    binding.pry
+    
     "#{@product_id_1}, #{@product_id_2}"
   end
 end
