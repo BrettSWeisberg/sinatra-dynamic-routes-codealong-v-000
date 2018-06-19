@@ -19,10 +19,12 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
 
+
+
   get "/multiply/:num1/:num2" do
     @product_id_1 = params[:num1]
     @product_id_2 = params[:num2]
-    @multi = @product_id_1 * @product_id_2
-    "#{@multi}"
+    @mult = @product_id_1 * @product_id_2
+     "#{@mult}"
   end
 end
